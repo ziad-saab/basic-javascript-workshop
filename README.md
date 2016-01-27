@@ -41,7 +41,7 @@ Challenge: create a file called `cowsay.js` in your Cloud9 project. Running this
 ### The Penniless Gambler
 Challenge: create a simple HTML file that will only be used for the purposes of running JavaScript in the browser. Create a `guess.js` file and add it to a `<script>` tag of your HTML file. This is simply so you can load your HTML file in the browser and do the challenge: creating a number guessing game.
 
-Generate a random number between 1 and 100. Using the browser functions prompt and alert, ask the user to guess the number. You should give them 4 tries to guess the number. If they guess right, congratulate them. Otherwise, give them a message saying what the correct number was, as well as their list of guesses.
+Generate a random number between 1 and 100. Using the browser functions prompt and alert, ask the user to guess the number. You should give them 4 tries to guess the number. If they guess wrong, tell them if it's higher or lower. If they guess right, congratulate them. Otherwise, give them a message saying what the correct number was, as well as their list of guesses.
 
 ### The God of Cows
 **EXTREME** challenge: create a file called `real-cowsay.js` inside your Cloud9 project. This is the only challenge that will require usage of some NodeJS functionality. This program will look more like the regular cowsay. Instead of outputting a random fortune like the previous example, it will either take a string on the command line and output that string (with the cow). If no string is provided on the command line, then your program will use standard input (like the regular cowsay) to get its phrase. Here are a couple of hints that will help you complete this:
