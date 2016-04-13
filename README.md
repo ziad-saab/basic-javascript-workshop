@@ -30,14 +30,55 @@
 * **Mini Challenge**: write a function that takes an array and a function as arguments. The function should return a new array that maps every element of the input array by passing it through the function you received. You are not allowed to use `Array.map` for this challenge, otherwise it would be too easy :)
 
 ## Challenges
-Each challenge should be done in a different branch, **branched off of master**. Give the branch a descriptive name of your choice, and make a pull request when you are done:
+Create a branch called `challenges` **off of master**. Make a pull request immediately and push your code after doing each exercise
 
 ### The Fortune Teller
 Challenge: create a file called `fortune.js` in your Cloud9 project. Running this file should output a random quote from a list of 10 different quotes. Make sure to add/commit this file and push it to your GitHub.
 
 ### The Cow Whisperer
-Challenge: create a file called `cowsay.js` in your Cloud9 project. Running this file should output a cow saying a random fortune. Make sure to add/commit this file and push it to your GitHub. If the fortune is longer than 30 characters, you have to wrap it on a new line. For extra brownie points, wrap your fortune at the word level instead of the letter level.
+Challenge: create a file called `cowsay.js` in your Cloud9 project. Running this file should output a cow saying a random fortune. This is reproducing the [cowsay command-line app](https://en.wikipedia.org/wiki/Cowsay). Make sure to add/commit this file and push it to your GitHub. If the fortune is longer than 30 characters, you have to wrap it on a new line. For extra brownie points, wrap your fortune at the word level instead of the letter level.
 
+The output should look something like this:
+
+If it fits on one line:
+```
+ _________________________ 
+< Some motivational quote >
+ ------------------------- 
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+```
+
+Two lines:
+```
+ ___________________________ 
+/ The quick brown fox jumps \
+\ over the lazy dog         /
+ --------------------------- 
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+```
+
+Multiple lines:
+```
+ _______________________________ 
+/ The quick brown fox jumps     \
+| over the lazy dog and goes on |
+| to do whatever it is that     |
+\ foxes do in the real world    /
+ ------------------------------- 
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+```
 ### The Penniless Gambler
 Challenge: create a simple HTML file that will only be used for the purposes of running JavaScript in the browser. Create a `guess.js` file and add it to a `<script>` tag of your HTML file. This is simply so you can load your HTML file in the browser and do the challenge: creating a number guessing game.
 
@@ -55,7 +96,7 @@ node real-cowsay.js "hello world"
 fortune | figlet | node real-cowsay.js
 ```
 
-You will need to use the special variable `process.argv` inside your JavaScript program. NodeJS make this variable available to you. It is an array containing all the command-line arguments passed to your program. For example, if you run:
+You will need to use the special variable `process.argv` inside your JavaScript program. NodeJS makes this variable available to you. It is an array containing all the command-line arguments passed to your program. For example, if you run:
 ```
 node real-cowsay.js "hello world"
 ```
@@ -63,4 +104,4 @@ then `process.argv[0]` will be `"hello world"`.
 
 For the standard input version, you will need to read about `process.stdin` as well as learn about asynchronous programming. These are things that will be viewed in week 2 of the course, but if you want to complete the challenge you need to do it :) Here is a link to some initial documentation:
 
-https://nodejs.org/docs/latest-v0.12.x/api/process.html#process_process_stdin
+https://nodejs.org/api/process.html#process_process_stdin
