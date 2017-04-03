@@ -1,5 +1,5 @@
 function firstLetter(inputString) {
-
+    return inputString[0];
 }
 
 function lastLetter(inputString) {
