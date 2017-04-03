@@ -3,7 +3,7 @@ function firstLetter(inputString) {
 }
 
 function lastLetter(inputString) {
-
+    return inputString[inputString.length - 1];
 }
 
 function letterAtPosition(inputString, position) {
