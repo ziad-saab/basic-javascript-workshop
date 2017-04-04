@@ -1,9 +1,5 @@
 var expect = require('chai').expect;
 
-var chai = require('chai');
-var spies = require('chai-spies');
-chai.use(spies);
-
 var calculator = require('../workshop').calculator;
 
 describe('calculator', function() {
