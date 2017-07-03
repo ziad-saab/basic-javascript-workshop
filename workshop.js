@@ -1,5 +1,11 @@
 function firstLetter(inputString) {
-
+    if (inputString === undefined) {
+        return undefined;
+    }
+    else {
+        return inputString[0];
+    }
+    
 }
 
 function lastLetter(inputString) {
